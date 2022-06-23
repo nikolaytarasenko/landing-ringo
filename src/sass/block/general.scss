@@ -52,7 +52,16 @@ img {
 }
 
 .section {
-  padding: 50px 0;
+  padding: 100px 0;
+
+  &__title {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 2.875rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
 }
 
 .title {
@@ -83,4 +92,15 @@ img {
 .hide {
   opacity: 0;
   visibility: hidden;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

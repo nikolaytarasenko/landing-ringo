@@ -1,0 +1,29 @@
+.directions {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    border-left: 1px solid rgba($color-black, 0.2);
+
+    &_last {
+      border-right: 1px solid rgba($color-black, 0.2);
+    }
+  }
+
+  &__item-number {
+    color: $color-black;
+    opacity: 0.5;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin-bottom: 60px;
+  }
+
+  &__item-name {
+    color: $color-green;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin-bottom: 30px;
+  }
+}
