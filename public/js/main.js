@@ -26,7 +26,7 @@ eval("/*!\n  * Bootstrap v5.1.3 (https://getbootstrap.com/)\n  * Copyright 2011-
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_js_bootstrap_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/js/bootstrap.bundle.min.js */ \"./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js\");\n/* harmony import */ var bootstrap_dist_js_bootstrap_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_bootstrap_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack://landing-ringo/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_js_bootstrap_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/js/bootstrap.bundle.min.js */ \"./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js\");\n/* harmony import */ var bootstrap_dist_js_bootstrap_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_bootstrap_bundle_min_js__WEBPACK_IMPORTED_MODULE_0__);\n// import \"bootstrap/dist/js/bootstrap.bundle.min.js\";\r\n\r\n\r\nconst initCarousel = () => {\r\n  const heroCarousel = document.querySelector('#heroCarousel');\r\n\r\n  const carousel = new (bootstrap_dist_js_bootstrap_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default().Carousel)(heroCarousel, {\r\n    interval: false\r\n  });\r\n}\r\n\r\nwindow.addEventListener('DOMContentLoaded', initCarousel);\n\n//# sourceURL=webpack://landing-ringo/./src/js/main.js?");
 
 /***/ })
 

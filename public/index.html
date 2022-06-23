@@ -44,7 +44,50 @@
           </div>
         </nav>
       </header>
-      <h1 class="title">Main page pug</h1>
+      <section class="hero">
+        <div class="carousel slide" id="heroCarousel" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" data-slide="1" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" data-slide="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" data-slide="3" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img class="d-block hero__carousel-img" src="./img/hero-slide-1.jpg" alt="slide 1">
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <h1 class="hero__title">комплексне меблювання інтер'єрів</h1>
+                <p class="hero__text">Ми створені виконувати об`єктні задачі комплексного меблювання житлових та комерційних приміщень. Наш колектив націлений на результат - вчасно реалізувати проект на найвищому рівні. Ми забезпечуємо ваш спокій та беремо на себе вирішення будь-яких задач</p>
+                <button class="btn button button_main">Обговорити проект</button>
+              </div>
+            </div>
+            <div class="carousel-item"><img class="d-block hero__carousel-img" src="./img/hero-slide-2.jpg" alt="slide 2">
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <h1 class="hero__title">Дизайн інтреєру</h1>
+                <p class="hero__text">В дизайні ми поєднуємо стильні ідеї з практичною ергономікою та можливістю точно реалізувати візуалізацію. Наш інтер`єр - це ваш індивідуальний простір, зона комфорту в житті та роботі</p>
+                <button class="btn button button_main">Обговорити проект</button>
+              </div>
+            </div>
+            <div class="carousel-item"><img class="d-block hero__carousel-img" src="./img/hero-slide-3.jpg" alt="slide 3">
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <h1 class="hero__title">виробництво меблів</h1>
+                <p class="hero__text">Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних приміщень, забезпечимо Вас якісним меблевим продуктом власного виробництва</p>
+                <button class="btn button button_main">Обговорити проект</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-arrows">
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <svg class="carousel-control-prev-icon" aria-hidden="true" width="21" height="16" viewbox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31946 8.07107 0.928931C7.68054 0.538407 7.04738 0.538407 6.65686 0.928931L0.292893 7.29289ZM21 7L1 7L1 9L21 9L21 7Z" fill="white"></path>
+              </svg><span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <svg class="carousel-control-next-icon" aria-hidden="true" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H20V7H0V9Z" fill="white"></path>
+              </svg><span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
       <footer>Footer pug</footer>
     </div>
     <script src="js/main.js"></script>

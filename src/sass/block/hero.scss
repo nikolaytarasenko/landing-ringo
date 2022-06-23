@@ -1,0 +1,27 @@
+.hero {
+  min-height: 687px;
+
+  &__title {
+    font-family: Lato, sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 4vw;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 50px;
+    opacity: 0.8;
+  }
+
+  &__carousel-img {
+    min-height: 687px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
