@@ -15,27 +15,31 @@ const shorthand = require('gulp-shorthand');
 const groupCssMediaQueries = require('gulp-group-css-media-queries');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
+const sourcemaps = require('gulp-sourcemaps');
 
 // Обработка SCSS
 const scss = () => {
-    return src(path.scss.src, { sourcemaps: app.isDev })
+    return src(path.scss.src)
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
                 title: 'SCSS',
                 message: error.message
             }))
         }))
+        .pipe(sourcemaps.init())
         .pipe(sassGlob())
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(shorthand())
         .pipe(groupCssMediaQueries())
         .pipe(size({ title: 'main.css' }))
-        .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
+        .pipe(sourcemaps.write())
+        .pipe(dest(path.scss.dest))
         .pipe(rename({ suffix: '.min' }))
         .pipe(csso())
         .pipe(size({ title: 'main.min.css' }))
-        .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }));
+        .pipe(sourcemaps.write())
+        .pipe(dest(path.scss.dest));
 }
 
 module.exports = scss;

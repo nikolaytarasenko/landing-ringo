@@ -1,19 +1,69 @@
 @font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu-Regular'),
-  url('../font/Ubuntu-Regular.woff2') format('woff2'),
-  url('../font/Ubuntu-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Lato';
+  src: local('Lato-Bold'),
+  url('../font/Lato-Bold.woff2') format('woff2'),
+  url('../font/Lato-Bold.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('OpenSans-Light'),
-  url('../font/OpenSans-Light.woff2') format('woff2'),
-  url('../font/OpenSans-Light.woff') format('woff');
-  font-weight: 300;
+  font-family: 'Lato';
+  src: local('Lato-Medium'),
+  url('../font/Lato-Medium.woff2') format('woff2'),
+  url('../font/Lato-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato-SemiBold'),
+  url('../font/Lato-SemiBold.woff2') format('woff2'),
+  url('../font/Lato-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway-Bold'),
+  url('../font/Raleway-Bold.woff2') format('woff2'),
+  url('../font/Raleway-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway-Medium'),
+  url('../font/Raleway-Medium.woff2') format('woff2'),
+  url('../font/Raleway-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway-Regular'),
+  url('../font/Raleway-Regular.woff2') format('woff2'),
+  url('../font/Raleway-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway-SemiBold'),
+  url('../font/Raleway-SemiBold.woff2') format('woff2'),
+  url('../font/Raleway-SemiBold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }

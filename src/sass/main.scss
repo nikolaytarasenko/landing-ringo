@@ -6,6 +6,7 @@
 @import 'utils/vars.scss';
 
 /* General */
-@import 'block/general.scss';
+@import 'block/general';
 
 /* Blocks */
+@import "block/header.scss";

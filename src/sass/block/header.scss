@@ -1,0 +1,66 @@
+.header {
+  padding: 20px 0;
+
+  &__navbar {
+    padding: 0;
+  }
+
+  &__contacts {
+    display: flex;
+  }
+
+  &__phone {
+    margin-left: 60px;
+  }
+
+  &__nav-item {
+    margin: 0 15px;
+  }
+
+  &__nav-link {
+    color: $color-black!important;
+    font-weight: 500;
+    line-height: 1rem;
+
+    &:hover {
+      color: $color-brown!important;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      path {
+        fill: $color-black;
+      }
+    }
+
+    path {
+      transition: 0.15s ease-out;
+    }
+  }
+}
+
+.phone {
+  &:hover {
+    path {
+      fill: $color-brown;
+    }
+  }
+  path {
+    transition: 0.15s ease-out;
+  }
+}
