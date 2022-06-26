@@ -1,4 +1,47 @@
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js";
+import $ from "jquery";
+import "slick-carousel";
+
+const initSliders = () => {
+  const sliders = [
+    {
+      centerMode: true,
+      sliderNode: '.works__slider .slider__items',
+      prevArrowNode: '.works .slider__arrow_left',
+      nextArrowNode: '.works .slider__arrow_right',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    }
+  ];
+
+  $.each(sliders, function(i, element) {
+    $(element.sliderNode).slick({
+      infinite: true,
+      slidesToShow: element.slidesToShow,
+      centerMode: element.centerMode,
+      // centerPadding: element.centerPadding,
+      prevArrow: element.prevArrowNode,
+      nextArrow: element.nextArrowNode,
+      responsive: element.responsive
+    })
+  });
+}
+
+const renderWorksSliderArrows = () => {
+  console.log('render arrows')
+  const arrowLeft = document.querySelector('.works__slider .slider__arrow_left');
+  const arrowRight = document.querySelector('.works__slider .slider__arrow_right');
+  const slideImgHeight = document.querySelector('.works__slider .slider__img-wrapper').getBoundingClientRect().height;
+
+  arrowLeft.style.top = arrowRight.style.top = (slideImgHeight / 2) - 30 + 'px';
+}
 
 const initCarousel = () => {
   const heroCarousel = document.querySelector('#heroCarousel');
@@ -53,8 +96,15 @@ const addContactFormSubmitEvents = () => {
 
 const domContentLoadedHandler = () => {
   initCarousel();
+  initSliders();
+  renderWorksSliderArrows();
   customizeContactFormFileInput();
   addContactFormSubmitEvents();
 }
 
+const resizeHandler = () => {
+  renderWorksSliderArrows();
+}
+
 window.addEventListener('DOMContentLoaded', domContentLoadedHandler);
+window.addEventListener('resize', resizeHandler);
