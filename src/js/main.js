@@ -18,6 +18,21 @@ const initSliders = () => {
           }
         }
       ]
+    },
+    {
+      centerMode: false,
+      sliderNode: '.partners__slider .slider__items',
+      prevArrowNode: '.partners .slider__arrow_left',
+      nextArrowNode: '.partners .slider__arrow_right',
+      slidesToShow: 4,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
     }
   ];
 
@@ -26,7 +41,6 @@ const initSliders = () => {
       infinite: true,
       slidesToShow: element.slidesToShow,
       centerMode: element.centerMode,
-      // centerPadding: element.centerPadding,
       prevArrow: element.prevArrowNode,
       nextArrow: element.nextArrowNode,
       responsive: element.responsive

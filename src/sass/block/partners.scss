@@ -1,0 +1,17 @@
+.partners {
+  &__slider-arrows {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  &__slider-arrow {
+    position: relative;
+    margin: 0 10px;
+    left: unset;
+    right: unset;
+    box-shadow: none;
+    border: 1px solid $color-green;
+  }
+}
