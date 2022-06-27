@@ -79,9 +79,10 @@ img {
   border-radius: 0;
   padding: 18px 56px;
   transition: 0.15s ease-out;
+  font-size: 1rem;
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: 700;
-  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.08);
 
   &:hover {
     background-color: #CC9654;

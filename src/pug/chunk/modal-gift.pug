@@ -1,0 +1,21 @@
+#modalGift.modal.fade(tabindex='-1' aria-labelledby='modalGiftLabel' aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+    .modal-content
+      .modal-header
+        button.modal__btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+          svg(width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M25.1663 1.8335L1.83301 25.1668M25.1663 25.1668L1.83301 1.8335L25.1663 25.1668Z' stroke='white' stroke-width='2' stroke-linecap='round')
+      .modal-body
+        form.modal__form.contact-form
+          h2.contact-form__title.modal__title Хочете отримати подарунок?
+          p.contact-form__subtitle Заповніть форму,  і ми звяжемося та розповімо про умови акції
+          .contact-form__control
+            input.contact-form__input(type="text" placeholder="Ім'я" required)
+          .contact-form__control
+            input.contact-form__input(type="tel" placeholder="063-123-45-67" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required)
+          .contact-form__control
+            input.contact-form__button.button.button_main.modal__submit-button(type="submit" value="Відправити")
+          .contact-form__control.text-start
+            input.contact-form__agree-radio(type="radio" id="form-gifts-agree-radio")
+            label.contact-form__agree-label(for="form-gifts-agree-radio")
+              small.contact-form__agree-text Даю згоду на оброблення персональних даних

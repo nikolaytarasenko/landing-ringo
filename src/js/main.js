@@ -35,7 +35,6 @@ const initSliders = () => {
 }
 
 const renderWorksSliderArrows = () => {
-  console.log('render arrows')
   const arrowLeft = document.querySelector('.works__slider .slider__arrow_left');
   const arrowRight = document.querySelector('.works__slider .slider__arrow_right');
   const slideImgHeight = document.querySelector('.works__slider .slider__img-wrapper').getBoundingClientRect().height;
@@ -68,10 +67,10 @@ const contactFormSubmitHandler = e => {
   e.preventDefault();
 
   const form = e.target;
-  const agreeRadioButtonStatus = form.querySelector('#form-agree-radio').checked;
+  const agreeRadioButtonStatus = form.querySelector('.contact-form__agree-radio').checked;
 
   if (!agreeRadioButtonStatus) {
-    document.querySelector('.contact-form__agree-text').style.color = '#E11616';
+    form.querySelector('.contact-form__agree-text').style.color = '#E11616';
 
     return false;
   }
