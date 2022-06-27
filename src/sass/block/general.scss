@@ -51,6 +51,14 @@ img {
   height: auto;
 }
 
+.logo {
+  transition: 0.15s ease-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
 .section {
   padding: 100px 0;
 
